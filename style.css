@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EEE;
+}
+
+.alfooly {
+    display: grid;
+    grid-template-areas: "div1 div1 div2 div3"
+        "div4 div5 div5 div3"
+        "div4 div6 div6 div3"
+        "div7 div8 div9 div10";
+
+    gap: 10px 10px;
+}
+
+h3 {
+    color: grey;
+}
+
+.div1 {
+    background-color: white;
+    grid-area: div1;
+    animation: div1 2s linear
+}
+
+
+.div2 {
+    background-color: white;
+    grid-area: div2;
+    animation: div2 2s linear;
+}
+
+
+.div3 {
+    background-color: black;
+    grid-area: div3;
+    color: white;
+    animation: div3 2s linear;
+
+}
+
+.div4 {
+    background-color: white;
+    grid-area: div4;
+    animation: div1 2s linear;
+
+}
+
+.div5 {
+    background-color: black;
+    color: white;
+    grid-area: div5;
+    animation: div5 2s linear;
+
+}
+
+.div6 {
+    background-color: white;
+    grid-area: div6;
+    animation: div6 2s linear;
+
+}
+
+.div7 {
+    background-color: white;
+    grid-area: div7;
+    animation: div1 2s linear;
+
+}
+
+.div8 {
+    background-color: black;
+    color: white;
+    grid-area: div8;
+    animation: div8-9 2s linear;
+
+}
+
+.div9 {
+    background-color: white;
+    grid-area: div9;
+    animation: div8-9 2s linear;
+
+}
+
+.div10 {
+    background-color: white;
+    grid-area: div10;
+    animation: div3 2s linear;
+
+}
+
+.p-osama1 {
+    font-weight: bold;
+}
+
+.alfooly div {
+    position: relative;
+    padding: 10px;
+    border-bottom: 3px red solid;
+}
+
+.alfooly div::after {
+    content: ' " ';
+    position: absolute;
+    color: #777;
+    right: 15px;
+    font-size: 25px;
+    bottom: 0;
+}
+
+
+@keyframes div1 {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(1px);
+    }
+}
+
+@keyframes div2 {
+    0% {
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(1px);
+    }
+}
+
+@keyframes div3 {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(1px);
+    }
+}
+
+@keyframes div8-9 {
+    0% {
+        opacity: 0;
+        transform: translateY(200px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(1px);
+    }
+}
+
+@keyframes div5 {
+    0% {
+        opacity: 0;
+        transform: translateX(-300px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(1px);
+    }
+}
+
+@keyframes div6 {
+    0% {
+        opacity: 0;
+        transform: translateX(300px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(1px);
+    }
+}
